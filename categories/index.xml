@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on LivelyRealm</title>
+    <link>https://PeaShXD.github.io/categories/</link>
+    <description>Recent content in Categories on LivelyRealm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>CC BY 4.0 CN</copyright>
+    
+        <atom:link href="https://PeaShXD.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello</title>
+      <link>https://PeaShXD.github.io/2021/04/hello/</link>
+      <pubDate>Sat, 24 Apr 2021 21:52:48 +0800</pubDate>
+      
+      <guid>https://PeaShXD.github.io/2021/04/hello/</guid>
+      <description>Hello, world!</description>
+    </item>
+    
+  </channel>
+</rss>
