@@ -248,6 +248,8 @@ function tagCloud(where, min, max) {
 </span>
 
 
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/04/hello/#comments"
+            class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2 words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Time: 1 minutes </span>
       </div>
@@ -288,8 +290,29 @@ function tagCloud(where, min, max) {
 
     </div>
   </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
 </div><nav class="bar bar-footer clearfix" data-stick-bottom>
     <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="next">
+                <a href="https://PeaShXD.github.io/about/"
+                    title="About"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
         <div class="bar-right">
             <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
                 data-mobile-sites="weibo,qq,qzone"></div>
@@ -307,7 +330,7 @@ function tagCloud(where, min, max) {
     &copy;2021  -
     2021
     <div class="publishby">
-        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+        Powered by Hugo
     </div>
   </div>
 </footer>
@@ -371,6 +394,27 @@ function tagCloud(where, min, max) {
     });
 </script>
 
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+    new Valine({
+        el: '#vcomments',
+        verify: true ,
+        notify: null ,
+        appId: 'jn2CLRIpJOUM5sQmOhLP2ikN-gzGzoHsz',
+        appKey: '1EB95dz7YYn2NhSx9A4uUmk2',
+        placeholder: 'enjoy~',
+        avatar: 'mm',
+        meta: meta,
+        pageSize: '10' || 10,
+        visitor: false 
+    });
+</script>
 
   </body>
 </html>

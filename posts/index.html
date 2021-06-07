@@ -248,7 +248,7 @@ function tagCloud(where, min, max) {
     &copy;2021  -
     2021
     <div class="publishby">
-        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+        Powered by Hugo
     </div>
   </div>
 </footer>
@@ -312,6 +312,27 @@ function tagCloud(where, min, max) {
     });
 </script>
 
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+    new Valine({
+        el: '#vcomments',
+        verify: true ,
+        notify: null ,
+        appId: 'jn2CLRIpJOUM5sQmOhLP2ikN-gzGzoHsz',
+        appKey: '1EB95dz7YYn2NhSx9A4uUmk2',
+        placeholder: 'enjoy~',
+        avatar: 'mm',
+        meta: meta,
+        pageSize: '10' || 10,
+        visitor: false 
+    });
+</script>
 
   </body>
 </html>
